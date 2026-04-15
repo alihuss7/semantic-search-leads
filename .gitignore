@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+**/.venv/
+**/venv/
+*.egg-info/
+
+# Environment
+.env
+.env.local
+.env*.local
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Database
+*.db
+
+# Assets - keep the folder, ignore large data files
+assets/*.csv
+!assets/.gitkeep
+
+# Node (frontend has its own .gitignore too)
+node_modules/
+
+# Local accidental folders (safety ignore)
+backend/#/
+backend/first/
+backend/only/
+backend/time/
