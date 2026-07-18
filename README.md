@@ -25,6 +25,17 @@ cp frontend/.env.local.example frontend/.env.local
 - `GOOGLE_AI_API_KEY` (required)
 - `DATABASE_URL` (default works with this repo)
 
+Example local backend env:
+
+```env
+DATABASE_URL=postgresql+asyncpg://postgres:password@127.0.0.1:5433/leads_db
+GOOGLE_AI_API_KEY=your-google-ai-api-key
+GOOGLE_TEXT_MODEL=models/gemini-2.5-flash
+GOOGLE_EMBEDDING_MODEL=models/gemini-embedding-2-preview
+GOOGLE_EMBEDDING_DIM=768
+ALLOWED_ORIGINS=http://localhost:3000
+```
+
 3. Start everything:
 
 ```bash
