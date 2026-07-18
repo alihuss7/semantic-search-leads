@@ -21,6 +21,10 @@ cp backend/.env.example backend/.env
 cp frontend/.env.local.example frontend/.env.local
 ```
 
+The `*.example` files are committed templates. The real `backend/.env` and
+`frontend/.env.local` files are local-only and should not be committed because
+they may contain secrets such as API keys.
+
 2. Edit `backend/.env` and set:
 - `GOOGLE_AI_API_KEY` (required)
 - `DATABASE_URL` (default works with this repo)
